@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>علیرضا مهربان — توسعه‌دهنده وب و هوش مصنوعی</title>
+<title>علیرضا مهربان | توسعه‌دهنده وب و مهندس هوش مصنوعی</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -16,9 +16,10 @@
   --ink:#e8eef7;
   --ink-dim:#94a3b8;
   --ink-faint:#5b6b80;
-  --turq:#2dd4bf;  --turq-deep:#0d9488;
-  --rose:#fb7185;  --amber:#fbbf24;
-  --radius:16px;
+  --turq:#2dd4bf;
+  --turq-deep:#0d9488;
+  --amber:#fbbf24;
+  --radius:14px;
   --font:'Vazirmatn', system-ui, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -36,7 +37,7 @@ nav{
   position:fixed;top:0;right:0;left:0;z-index:50;
   display:flex;align-items:center;justify-content:space-between;
   padding:14px clamp(20px,5vw,64px);
-  background:rgba(11,16,23,.72);
+  background:rgba(11,16,23,.75);
   backdrop-filter:blur(14px);
   border-bottom:1px solid rgba(45,212,191,.08);
   transition:transform .4s ease;
@@ -58,7 +59,7 @@ header{
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;
 }
-#seg{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+#seg{position:absolute;inset:0;width:100%;height:100%;opacity:.45}
 .hero-fade{
   position:absolute;inset:0;
   background:radial-gradient(ellipse 70% 60% at 50% 45%, transparent 20%, var(--bg) 92%);
@@ -66,35 +67,32 @@ header{
 }
 .hero-inner{position:relative;z-index:2;text-align:center;padding:0 20px;max-width:860px}
 .hero-tag{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:.8rem;color:var(--turq);font-weight:500;
+  display:inline-block;
+  font-size:.78rem;color:var(--turq);font-weight:500;letter-spacing:.08em;
   border:1px solid rgba(45,212,191,.35);border-radius:99px;
-  padding:6px 18px;margin-bottom:26px;
-  background:rgba(45,212,191,.06);
+  padding:6px 20px;margin-bottom:28px;
+  background:rgba(45,212,191,.05);
 }
-.hero-tag::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--turq);
-  animation:pulse 2.2s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(45,212,191,.55)}55%{box-shadow:0 0 0 9px rgba(45,212,191,0)}}
 h1{
-  font-size:clamp(2.6rem,8vw,5.2rem);
+  font-size:clamp(2.6rem,8vw,5rem);
   font-weight:900;line-height:1.25;
-  margin-bottom:10px;
+  margin-bottom:12px;
 }
 h1 .grad{
-  background:linear-gradient(120deg,var(--turq) 10%,#67e8f9 45%,var(--rose) 95%);
+  background:linear-gradient(120deg,var(--turq) 20%,#67e8f9 90%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.hero-sub{font-size:clamp(1.05rem,2.6vw,1.45rem);color:var(--ink-dim);font-weight:300;margin-bottom:38px}
+.hero-sub{font-size:clamp(1.05rem,2.5vw,1.35rem);color:var(--ink-dim);font-weight:300;margin-bottom:40px}
 .hero-sub b{color:var(--ink);font-weight:700}
 .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .btn{
-  font-family:var(--font);font-size:.95rem;font-weight:700;
-  padding:13px 32px;border-radius:12px;cursor:pointer;text-decoration:none;
-  transition:transform .2s,box-shadow .25s,background .25s;
+  font-family:var(--font);font-size:.93rem;font-weight:700;
+  padding:13px 34px;border-radius:10px;cursor:pointer;text-decoration:none;
+  transition:transform .2s,box-shadow .25s,border-color .25s,color .25s;
   border:none;display:inline-block;
 }
 .btn-solid{background:var(--turq);color:#052e2a}
-.btn-solid:hover{transform:translateY(-3px);box-shadow:0 12px 32px -8px rgba(45,212,191,.5)}
+.btn-solid:hover{transform:translateY(-3px);box-shadow:0 12px 32px -8px rgba(45,212,191,.45)}
 .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--card-edge)}
 .btn-ghost:hover{border-color:var(--turq);color:var(--turq);transform:translateY(-3px)}
 .scroll-hint{
@@ -113,11 +111,11 @@ main{max-width:1080px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
 section{padding:88px 0 24px}
 .sec-head{margin-bottom:44px}
 .sec-eyebrow{
-  color:var(--turq);font-size:.8rem;font-weight:700;letter-spacing:.14em;
+  color:var(--turq);font-size:.78rem;font-weight:700;letter-spacing:.14em;
   display:flex;align-items:center;gap:12px;margin-bottom:8px;
 }
 .sec-eyebrow::after{content:'';height:1px;width:56px;background:var(--turq-deep);opacity:.6}
-.sec-title{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:900}
+.sec-title{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:900}
 
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
@@ -127,7 +125,8 @@ section{padding:88px 0 24px}
 }
 
 .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start}
-.about-text{color:var(--ink-dim);font-size:1.02rem}
+.about-text{color:var(--ink-dim);font-size:1.02rem;text-align:justify;text-justify:inter-word}
+p{text-wrap:pretty}
 .about-text strong{color:var(--turq);font-weight:700}
 .fact-card{
   background:var(--card);border:1px solid var(--card-edge);border-radius:var(--radius);
@@ -143,31 +142,30 @@ section{padding:88px 0 24px}
 .skills{display:flex;flex-wrap:wrap;gap:12px}
 .chip{
   background:var(--card);border:1px solid var(--card-edge);
-  border-radius:12px;padding:11px 20px;font-size:.92rem;font-weight:600;
-  display:flex;align-items:center;gap:10px;
+  border-radius:10px;padding:11px 22px;font-size:.92rem;font-weight:600;
+  display:flex;align-items:center;gap:12px;
   transition:border-color .3s,transform .25s,background .3s;
   cursor:default;
 }
 .chip:hover{border-color:var(--turq);transform:translateY(-4px);background:rgba(45,212,191,.05)}
-.chip .lvl{font-size:.7rem;color:var(--turq);background:rgba(45,212,191,.1);border-radius:99px;padding:2px 10px;font-weight:500}
-.chip.ai .lvl{color:var(--rose);background:rgba(251,113,133,.1)}
+.chip .lvl{font-size:.7rem;color:var(--turq);background:rgba(45,212,191,.1);border-radius:99px;padding:2px 12px;font-weight:500}
 
 .timeline{position:relative;padding-right:28px}
 .timeline::before{
   content:'';position:absolute;right:6px;top:6px;bottom:6px;width:2px;
-  background:linear-gradient(var(--turq),var(--rose) 90%);border-radius:2px;opacity:.45;
+  background:linear-gradient(var(--turq),transparent 96%);border-radius:2px;opacity:.4;
 }
 .tl-item{position:relative;padding-bottom:42px}
 .tl-item:last-child{padding-bottom:0}
 .tl-item::before{
   content:'';position:absolute;right:-28px;top:9px;width:13px;height:13px;border-radius:50%;
   background:var(--bg);border:3px solid var(--turq);
-  box-shadow:0 0 0 5px rgba(45,212,191,.12);
+  box-shadow:0 0 0 5px rgba(45,212,191,.1);
 }
 .tl-date{font-size:.78rem;color:var(--turq);font-weight:700;margin-bottom:4px}
 .tl-role{font-size:1.2rem;font-weight:800}
 .tl-org{color:var(--ink-dim);font-size:.92rem;margin-bottom:8px}
-.tl-desc{color:var(--ink-dim);font-size:.95rem;max-width:640px}
+.tl-desc{color:var(--ink-dim);font-size:.95rem;max-width:640px;text-align:justify}
 
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
 .proj{
@@ -178,17 +176,21 @@ section{padding:88px 0 24px}
 }
 .proj::before{
   content:'';position:absolute;top:0;right:0;left:0;height:3px;
-  background:linear-gradient(90deg,var(--turq),var(--rose));
+  background:linear-gradient(90deg,var(--turq),#67e8f9);
   transform:scaleX(0);transform-origin:right;transition:transform .45s ease;
 }
 .proj:hover{transform:translateY(-6px);border-color:rgba(45,212,191,.4);box-shadow:0 20px 50px -20px rgba(0,0,0,.6)}
 .proj:hover::before{transform:scaleX(1)}
-.proj-icon{font-size:1.7rem}
-.proj h3{font-size:1.12rem;font-weight:800}
-.proj p{color:var(--ink-dim);font-size:.9rem;flex:1}
+.proj-kind{
+  font-size:.68rem;font-weight:700;letter-spacing:.1em;color:var(--turq);
+  border:1px solid rgba(45,212,191,.3);border-radius:6px;
+  padding:3px 12px;align-self:flex-start;background:rgba(45,212,191,.05);
+}
+.proj h3{font-size:1.1rem;font-weight:800}
+.proj p{color:var(--ink-dim);font-size:.9rem;flex:1;text-align:justify}
 .proj .tags{display:flex;flex-wrap:wrap;gap:7px}
 .tag{
-  font-size:.7rem;color:var(--turq);border:1px solid rgba(45,212,191,.3);
+  font-size:.7rem;color:var(--ink-dim);border:1px solid var(--card-edge);
   border-radius:99px;padding:3px 12px;direction:ltr;
 }
 .proj .date{font-size:.74rem;color:var(--ink-faint)}
@@ -204,17 +206,17 @@ section{padding:88px 0 24px}
 .edu .uni{color:var(--ink-dim);font-size:.9rem}
 .edu .gpa{
   display:inline-block;margin-top:12px;font-size:.78rem;font-weight:700;
-  color:var(--amber);background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);
-  border-radius:99px;padding:4px 14px;
+  color:var(--amber);background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.25);
+  border-radius:99px;padding:4px 16px;
 }
-.edu .note{margin-top:10px;color:var(--ink-dim);font-size:.85rem}
+.edu .note{margin-top:10px;color:var(--ink-dim);font-size:.85rem;text-align:justify}
 @media(max-width:720px){.edu-grid{grid-template-columns:1fr}}
 
 .extra-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
 .xcard{background:var(--card);border:1px solid var(--card-edge);border-radius:var(--radius);padding:26px}
-.xcard h4{font-size:.98rem;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:9px}
-.xcard h4 .dot{width:8px;height:8px;border-radius:50%;background:var(--rose)}
+.xcard h4{font-size:.98rem;font-weight:800;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--card-edge)}
 .xcard p,.xcard li{color:var(--ink-dim);font-size:.88rem}
+.xcard p{text-align:justify}
 .xcard ul{list-style:none;display:grid;gap:8px}
 .lang-bar{height:6px;border-radius:99px;background:var(--card-edge);margin-top:5px;overflow:hidden}
 .lang-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--turq),#67e8f9);
@@ -224,22 +226,22 @@ section{padding:88px 0 24px}
 
 footer{
   margin-top:90px;border-top:1px solid var(--card-edge);
-  background:radial-gradient(ellipse 60% 90% at 50% 110%, rgba(45,212,191,.08), transparent);
+  background:radial-gradient(ellipse 60% 90% at 50% 110%, rgba(45,212,191,.07), transparent);
   text-align:center;padding:80px 20px 44px;
 }
-footer h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;margin-bottom:12px}
+footer h2{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:900;margin-bottom:12px}
 footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
 .contact-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:44px}
 .c-item{
   display:flex;align-items:center;gap:10px;
-  background:var(--card);border:1px solid var(--card-edge);border-radius:12px;
-  padding:12px 22px;color:var(--ink);text-decoration:none;font-size:.9rem;font-weight:600;
+  background:var(--card);border:1px solid var(--card-edge);border-radius:10px;
+  padding:12px 24px;color:var(--ink);text-decoration:none;font-size:.9rem;font-weight:600;
   transition:border-color .3s,transform .25s;
 }
 .c-item:hover{border-color:var(--turq);transform:translateY(-3px)}
 .c-item .ltr{direction:ltr}
+.c-item .lbl{color:var(--ink-faint);font-size:.78rem;font-weight:500}
 .copy{color:var(--ink-faint);font-size:.78rem}
-.copy span{color:var(--turq)}
 </style>
 </head>
 <body>
@@ -249,7 +251,7 @@ footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
   <ul class="nav-links">
     <li><a href="#about">درباره</a></li>
     <li><a href="#skills">مهارت‌ها</a></li>
-    <li><a href="#exp">سوابق</a></li>
+    <li><a href="#exp">سوابق کاری</a></li>
     <li><a href="#proj">پروژه‌ها</a></li>
     <li><a href="#edu">تحصیلات</a></li>
     <li><a href="#contact">تماس</a></li>
@@ -260,145 +262,158 @@ footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
   <canvas id="seg" aria-hidden="true"></canvas>
   <div class="hero-fade"></div>
   <div class="hero-inner">
-    <div class="hero-tag">آماده همکاری</div>
+    <div class="hero-tag">توسعه‌دهنده وب و مهندس هوش مصنوعی</div>
     <h1>علیرضا <span class="grad">مهربان</span></h1>
-    <p class="hero-sub">توسعه‌دهنده <b>وب</b> و متخصص <b>هوش مصنوعی</b> — از ایده تا محصول، فرانت‌اند تا مدل‌های یادگیری عمیق</p>
+    <p class="hero-sub">طراحی و توسعه‌ی محصولات نرم‌افزاری، از <b>اپلیکیشن‌های وب و موبایل</b> تا <b>سامانه‌های مبتنی بر یادگیری عمیق</b></p>
     <div class="hero-cta">
       <a href="#proj" class="btn btn-solid">مشاهده پروژه‌ها</a>
-      <a href="#contact" class="btn btn-ghost">ارتباط با من</a>
+      <a href="#contact" class="btn btn-ghost">اطلاعات تماس</a>
     </div>
   </div>
-  <div class="scroll-hint">اسکرول کنید</div>
+  <div class="scroll-hint">ادامه</div>
 </header>
 
 <main>
+
   <section id="about">
     <div class="sec-head rv">
-      <div class="sec-eyebrow">درباره من</div>
-      <h2 class="sec-title">وب + هوش مصنوعی</h2>
+      <div class="sec-eyebrow">معرفی</div>
+      <h2 class="sec-title">درباره من</h2>
     </div>
     <div class="about-grid">
       <p class="about-text rv">
-        توسعه‌دهنده‌ای هستم که هم دنیای <strong>وب و موبایل</strong> را می‌سازد و هم با <strong>یادگیری عمیق</strong> به تصاویر معنا می‌دهد.
-        از ساخت اپلیکیشن‌های Flutter و پنل‌های React گرفته تا بک‌اندهای Django و سگمنتیشن تصاویر هوایی با هوش مصنوعی —
-        در پروژه‌های شهرداری شیراز، دانشگاه دولتی شیراز و استارتاپ‌ها تجربه‌ی تبدیل ایده به محصول واقعی را داشته‌ام.
-        در حال حاضر دانشجوی کارشناسی ارشد هوش مصنوعی (استعداد درخشان) هستم و مقاله‌ای در حوزه‌ی Visual Question Answering در دست انتشار دارم.
+        توسعه‌دهنده‌ی نرم‌افزار با تمرکز بر <strong>توسعه وب و موبایل</strong> و <strong>هوش مصنوعی</strong> هستم.
+        تجربه‌ی من طیفی از توسعه‌ی اپلیکیشن‌های Flutter و پنل‌های مدیریتی React تا بک‌اندهای Django و
+        پیاده‌سازی مدل‌های سگمنتیشن تصاویر هوایی را در بر می‌گیرد. در همکاری با شهرداری شیراز، دانشگاه دولتی شیراز
+        و شرکت‌های خصوصی، پروژه‌های متعددی را از مرحله‌ی طراحی تا استقرار نهایی به سرانجام رسانده‌ام.
+        هم‌اکنون دانشجوی کارشناسی ارشد هوش مصنوعی و رباتیک (پذیرش استعداد درخشان) هستم و مقاله‌ای پژوهشی
+        در حوزه‌ی Visual Question Answering در مرحله‌ی داوری دارم.
       </p>
       <div class="fact-card rv">
-        <div class="fact"><span class="k">موقعیت</span><span class="v fa">شیراز، فارس</span></div>
-        <div class="fact"><span class="k">متولد</span><span class="v fa">۱۳۸۲</span></div>
+        <div class="fact"><span class="k">محل سکونت</span><span class="v fa">شیراز، فارس</span></div>
+        <div class="fact"><span class="k">سال تولد</span><span class="v fa">۱۳۸۲</span></div>
         <div class="fact"><span class="k">وضعیت نظام وظیفه</span><span class="v fa">مشمول</span></div>
         <div class="fact"><span class="k">تیپ شخصیتی</span><span class="v">ENFJ-A</span></div>
-        <div class="fact"><span class="k">ایمیل</span><span class="v">mr.kind1382@gmail.com</span></div>
+        <div class="fact"><span class="k">پست الکترونیک</span><span class="v">mr.kind1382@gmail.com</span></div>
       </div>
     </div>
   </section>
+
   <section id="skills">
     <div class="sec-head rv">
-      <div class="sec-eyebrow">جعبه‌ابزار</div>
-      <h2 class="sec-title">مهارت‌ها</h2>
+      <div class="sec-eyebrow">تخصص</div>
+      <h2 class="sec-title">مهارت‌های فنی</h2>
     </div>
     <div class="skills rv">
-      <div class="chip ai">🧠 Deep Learning <span class="lvl">پیشرفته</span></div>
-      <div class="chip">🐍 Python <span class="lvl">پیشرفته</span></div>
-      <div class="chip">⚡ JavaScript <span class="lvl">پیشرفته</span></div>
-      <div class="chip">⚛️ React.js <span class="lvl">پیشرفته</span></div>
-      <div class="chip">📱 Flutter <span class="lvl">پیشرفته</span></div>
-      <div class="chip">🌐 طراحی وب <span class="lvl">پیشرفته</span></div>
-      <div class="chip">🎨 فتوشاپ و ابزارهای طراحی UI <span class="lvl">پیشرفته</span></div>
-      <div class="chip">🔀 Git <span class="lvl">پیشرفته</span></div>
-      <div class="chip">🤝 کار تیمی <span class="lvl">حرفه‌ای</span></div>
+      <div class="chip">Python <span class="lvl">حرفه‌ای</span></div>
+      <div class="chip">Deep Learning <span class="lvl">پیشرفته</span></div>
+      <div class="chip">JavaScript <span class="lvl">پیشرفته</span></div>
+      <div class="chip">React.js <span class="lvl">پیشرفته</span></div>
+      <div class="chip">Flutter <span class="lvl">پیشرفته</span></div>
+      <div class="chip">طراحی بک‌اند وب <span class="lvl">پیشرفته</span></div>
+      <div class="chip">طراحی رابط کاربری <span class="lvl">پیشرفته</span></div>
+      <div class="chip">Git <span class="lvl">پیشرفته</span></div>
+      <div class="chip">کار تیمی <span class="lvl">حرفه‌ای</span></div>
     </div>
   </section>
+
   <section id="exp">
     <div class="sec-head rv">
-      <div class="sec-eyebrow">مسیر حرفه‌ای</div>
+      <div class="sec-eyebrow">تجربه</div>
       <h2 class="sec-title">سوابق کاری</h2>
     </div>
     <div class="timeline">
       <div class="tl-item rv">
-        <div class="tl-date">۱۴۰۳/۰۷ — اکنون</div>
+        <div class="tl-date">اکنون — در حال انجام</div>
+        <div class="tl-role">کارشناس هوش مصنوعی</div>
+        <div class="tl-org">دانشگاه دولتی شیراز</div>
+        <p class="tl-desc">طراحی برنامه‌ی تمرینی هوشمند مبتنی بر هوش مصنوعی برای اعضای تیم ملی فدراسیون‌های ورزشی.</p>
+      </div>
+      <div class="tl-item rv">
+        <div class="tl-date">مهر ۱۴۰۳ — اکنون</div>
         <div class="tl-role">برنامه‌نویس اندروید</div>
         <div class="tl-org">دانشگاه دولتی شیراز</div>
-        <p class="tl-desc">توسعه‌ی دو اپلیکیشن اندروید با فریم‌ورک Flutter برای حوزه‌ی سلامت و ورزش.</p>
+        <p class="tl-desc">توسعه‌ی دو اپلیکیشن اندروید با فریم‌ورک Flutter در حوزه‌ی سلامت و ورزش.</p>
       </div>
       <div class="tl-item rv">
-        <div class="tl-date">۱۴۰۳/۱۰ — ۱۴۰۴/۰۴</div>
+        <div class="tl-date">دی ۱۴۰۳ — تیر ۱۴۰۴</div>
         <div class="tl-role">کارشناس هوش مصنوعی</div>
         <div class="tl-org">شهرداری شیراز</div>
-        <p class="tl-desc">طراحی و پیاده‌سازی پلتفرم مبتنی بر هوش مصنوعی برای تشخیص ساخت‌وسازهای غیرمجاز در باغات قصرالدشت با سگمنتیشن تصاویر هوایی.</p>
+        <p class="tl-desc">طراحی و پیاده‌سازی پلتفرم مبتنی بر هوش مصنوعی جهت تشخیص ساخت‌وسازهای غیرمجاز در باغات قصرالدشت با استفاده از سگمنتیشن تصاویر هوایی.</p>
       </div>
       <div class="tl-item rv">
-        <div class="tl-date">۱۴۰۳/۰۳ — ۱۴۰۳/۰۸</div>
+        <div class="tl-date">خرداد ۱۴۰۳ — آبان ۱۴۰۳</div>
         <div class="tl-role">برنامه‌نویس ویندوز</div>
         <div class="tl-org">شهرداری جهرم</div>
         <p class="tl-desc">طراحی و توسعه‌ی اپلیکیشن ویندوز برای واحد درآمد شهرداری جهرم.</p>
       </div>
       <div class="tl-item rv">
-        <div class="tl-date">۱۴۰۳/۰۱ — ۱۴۰۳/۰۳</div>
+        <div class="tl-date">فروردین ۱۴۰۳ — خرداد ۱۴۰۳</div>
         <div class="tl-role">برنامه‌نویس موبایل</div>
         <div class="tl-org">شرکت تکرام</div>
         <p class="tl-desc">طراحی و پیاده‌سازی اپلیکیشن موبایل اختصاصی برای نمایشگاه تهران اکسپو.</p>
       </div>
       <div class="tl-item rv">
-        <div class="tl-date">۱۴۰۰/۰۶ — ۱۴۰۱/۰۵</div>
+        <div class="tl-date">شهریور ۱۴۰۰ — مرداد ۱۴۰۱</div>
         <div class="tl-role">برنامه‌نویس وب</div>
         <div class="tl-org">نوین</div>
-        <p class="tl-desc">توسعه‌ی وب‌سایت کامل (فرانت‌اند و بک‌اند) به‌همراه فایل‌های سفارشی.</p>
+        <p class="tl-desc">توسعه‌ی وب‌سایت کامل (فرانت‌اند و بک‌اند) به‌همراه ماژول‌های حسابداری سفارشی.</p>
       </div>
     </div>
   </section>
+
   <section id="proj">
     <div class="sec-head rv">
-      <div class="sec-eyebrow">نمونه‌کارها</div>
+      <div class="sec-eyebrow">نمونه کارها</div>
       <h2 class="sec-title">پروژه‌های شاخص</h2>
     </div>
     <div class="proj-grid">
       <article class="proj rv">
-        <div class="proj-icon">🛰️</div>
+        <span class="proj-kind">هوش مصنوعی</span>
         <h3>تشخیص ساخت‌وساز غیرقانونی</h3>
-        <p>سگمنتیشن تصاویر هوایی با هوش مصنوعی برای شناسایی ساخت‌وسازهای غیرمجاز در باغات قصرالدشت شیراز.</p>
+        <p>سگمنتیشن تصاویر هوایی با یادگیری عمیق جهت شناسایی ساخت‌وسازهای غیرمجاز در باغات قصرالدشت شیراز؛ در همکاری با شهرداری شیراز.</p>
         <div class="tags"><span class="tag">Deep Learning</span><span class="tag">Segmentation</span><span class="tag">Python</span></div>
-        <div class="date">۱۴۰۳/۱۰ — ۱۴۰۴/۰۴</div>
+        <div class="date">دی ۱۴۰۳ — تیر ۱۴۰۴</div>
       </article>
       <article class="proj rv">
-        <div class="proj-icon">🏃</div>
-        <h3>استپ — قدم‌شمار هوشمند</h3>
-        <p>نرم‌افزار هوشمند قدم‌شمار و ردیابی دویدن. طراحی و توسعه‌ی کامل سرور و بک‌اند بر عهده‌ی من بود.</p>
+        <span class="proj-kind">بک‌اند</span>
+        <h3>استپ — سامانه هوشمند قدم‌شمار</h3>
+        <p>نرم‌افزار هوشمند قدم‌شمار و ردیابی دویدن. طراحی و توسعه‌ی کامل سرور و بک‌اند این محصول بر عهده‌ی اینجانب بوده است.</p>
         <div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">REST API</span></div>
-        <div class="date">۱۴۰۳/۱۰ — ۱۴۰۴/۰۶</div>
-        <a href="https://step-app.ir" target="_blank" rel="noopener">step-app.ir ←</a>
+        <div class="date">دی ۱۴۰۳ — شهریور ۱۴۰۴</div>
+        <a href="https://step-app.ir" target="_blank" rel="noopener">step-app.ir</a>
       </article>
       <article class="proj rv">
-        <div class="proj-icon">🤰</div>
-        <h3>اپ ورزش زنان باردار</h3>
-        <p>اپلیکیشن تخصصی تمرینات ورزشی دوران بارداری با پنل مدیریت اختصاصی و سرور مستقل.</p>
+        <span class="proj-kind">فول‌استک</span>
+        <h3>سامانه ورزش بانوان باردار</h3>
+        <p>اپلیکیشن تخصصی تمرینات ورزشی دوران بارداری، شامل اپلیکیشن موبایل، پنل مدیریت و سرور اختصاصی.</p>
         <div class="tags"><span class="tag">Flutter</span><span class="tag">React</span><span class="tag">Django</span></div>
-        <div class="date">۱۴۰۳/۰۷ — اکنون</div>
+        <div class="date">مهر ۱۴۰۳ — اکنون</div>
       </article>
       <article class="proj rv">
-        <div class="proj-icon">🧓</div>
-        <h3>اپ ورزش سالمندان</h3>
-        <p>اپلیکیشن تمرینات ورزشی ویژه‌ی افراد سالمند؛ از اپ موبایل تا پنل مدیریت و بک‌اند.</p>
+        <span class="proj-kind">فول‌استک</span>
+        <h3>سامانه ورزش سالمندان</h3>
+        <p>اپلیکیشن تمرینات ورزشی ویژه‌ی سالمندان؛ توسعه‌ی اپلیکیشن موبایل، پنل مدیریت و زیرساخت سرور.</p>
         <div class="tags"><span class="tag">Flutter</span><span class="tag">React</span><span class="tag">Django</span></div>
-        <div class="date">۱۴۰۳/۰۷ — اکنون</div>
+        <div class="date">مهر ۱۴۰۳ — اکنون</div>
       </article>
       <article class="proj rv">
-        <div class="proj-icon">📄</div>
+        <span class="proj-kind">پژوهش</span>
         <h3>K-VQA: A Kind Visual Question Answering</h3>
-        <p>مقاله‌ی پژوهشی در حوزه‌ی پاسخ‌گویی به پرسش‌های بصری — در حال ثبت در ژورنال ScienceDirect.</p>
+        <p>مقاله‌ی پژوهشی در حوزه‌ی پاسخ‌گویی به پرسش‌های بصری؛ در مرحله‌ی ثبت و داوری در ژورنال ScienceDirect.</p>
         <div class="tags"><span class="tag">Research</span><span class="tag">VQA</span><span class="tag">AI</span></div>
-        <div class="date">مقاله‌ی علمی</div>
+        <div class="date">مقاله علمی</div>
       </article>
       <article class="proj rv">
-        <div class="proj-icon">🏅</div>
+        <span class="proj-kind">افتخارات</span>
         <h3>المپیاد ورزش‌های فناورانه</h3>
-        <p>گواهی از دانشگاه صنعتی امیرکبیر (پلی‌تکنیک تهران) — شماره سریال 4/499331، بدون انقضا.</p>
-        <div class="tags"><span class="tag">Certificate</span><span class="tag">Amirkabir</span></div>
-        <div class="date">۱۴۰۴/۰۶</div>
+        <p>گواهینامه از دانشگاه صنعتی امیرکبیر (پلی‌تکنیک تهران)؛ شماره سریال ۴/۴۹۹۳۳۱، بدون تاریخ انقضا.</p>
+        <div class="tags"><span class="tag">Certificate</span><span class="tag">Amirkabir University</span></div>
+        <div class="date">شهریور ۱۴۰۴</div>
       </article>
     </div>
   </section>
+
   <section id="edu">
     <div class="sec-head rv">
       <div class="sec-eyebrow">آموزش</div>
@@ -406,27 +421,28 @@ footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
     </div>
     <div class="edu-grid">
       <div class="edu rv">
-        <div class="deg">کارشناسی ارشد — هوش مصنوعی و رباتیک</div>
-        <div class="uni">دانشگاه جهرم · ۱۴۰۴/۰۷ تا اکنون</div>
-        <span class="gpa">معدل ۱۸ · پذیرش استعداد درخشان ✦</span>
+        <div class="deg">کارشناسی ارشد هوش مصنوعی و رباتیک</div>
+        <div class="uni">دانشگاه جهرم | مهر ۱۴۰۴ تا اکنون</div>
+        <span class="gpa">معدل ۱۸ | پذیرش استعداد درخشان</span>
         <p class="note">پذیرفته‌شده بر اساس سهمیه‌ی استعدادهای درخشان در رشته‌ی هوش مصنوعی و رباتیک.</p>
       </div>
       <div class="edu rv">
-        <div class="deg">کارشناسی — مهندسی نرم‌افزار</div>
-        <div class="uni">دانشگاه جهرم · ۱۴۰۰/۰۷ تا ۱۴۰۴/۰۴</div>
+        <div class="deg">کارشناسی مهندسی نرم‌افزار</div>
+        <div class="uni">دانشگاه جهرم | مهر ۱۴۰۰ تا تیر ۱۴۰۴</div>
         <span class="gpa">معدل ۱۷</span>
-        <p class="note">دوره‌ی تکمیلی: پایتون صفر تا صد دانشگاه تهران (numpy، matplotlib، django، sqlite و…).</p>
+        <p class="note">دوره‌ی تکمیلی: پایتون صفر تا صد دانشگاه تهران، شامل کتابخانه‌های numpy، matplotlib، django و sqlite.</p>
       </div>
     </div>
   </section>
+
   <section id="extra">
     <div class="sec-head rv">
-      <div class="sec-eyebrow">بیشتر</div>
-      <h2 class="sec-title">زبان‌ها و شخصیت</h2>
+      <div class="sec-eyebrow">اطلاعات تکمیلی</div>
+      <h2 class="sec-title">زبان‌ها و مشخصات فردی</h2>
     </div>
     <div class="extra-grid">
       <div class="xcard rv">
-        <h4><span class="dot"></span> زبان‌های خارجی</h4>
+        <h4>زبان‌های خارجی</h4>
         <ul>
           <li>انگلیسی — پیشرفته
             <div class="lang-bar"><i style="--w:.9"></i></div>
@@ -437,14 +453,14 @@ footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
         </ul>
       </div>
       <div class="xcard rv">
-        <h4><span class="dot"></span> تیپ شخصیتی MBTI</h4>
-        <p><b style="color:var(--ink)" class="en">ENFJ-A</b> — «مربی رشد» از گروه شخصیتی سیاست‌مداران؛ برون‌گرا، الهام‌بخش و تیم‌محور.</p>
+        <h4>تیپ شخصیتی MBTI</h4>
+        <p><b style="color:var(--ink)" class="en">ENFJ-A</b> — تیپ شخصیتی «مربی رشد» از گروه سیاست‌مداران؛ برون‌گرا، مسئولیت‌پذیر و تیم‌محور.</p>
       </div>
       <div class="xcard rv">
-        <h4><span class="dot"></span> شبکه‌های اجتماعی</h4>
+        <h4>پروفایل‌های حرفه‌ای</h4>
         <ul>
-          <li><a class="en" style="color:var(--turq);text-decoration:none" href="https://www.linkedin.com/in/alireza-mehraban-34007a236" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-          <li><a class="en" style="color:var(--turq);text-decoration:none" href="https://instagram.com/alireza.mehrbn" target="_blank" rel="noopener">Instagram ↗</a></li>
+          <li><a class="en" style="color:var(--turq);text-decoration:none" href="https://www.linkedin.com/in/alireza-mehraban-34007a236" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a class="en" style="color:var(--turq);text-decoration:none" href="https://instagram.com/alireza.mehrbn" target="_blank" rel="noopener">Instagram</a></li>
         </ul>
       </div>
     </div>
@@ -453,14 +469,14 @@ footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
 </main>
 
 <footer id="contact">
-  <h2>بیایید با هم چیزی بسازیم ✦</h2>
-  <p class="sub">برای همکاری، پروژه یا حتی یک گپ فنی، در دسترس هستم.</p>
+  <h2>اطلاعات تماس</h2>
+  <p class="sub">جهت همکاری در پروژه‌ها یا فرصت‌های شغلی، از طریق راه‌های زیر در دسترس هستم.</p>
   <div class="contact-row">
-    <a class="c-item" href="mailto:mr.kind1382@gmail.com">✉️ <span class="ltr">mr.kind1382@gmail.com</span></a>
-    <a class="c-item" href="tel:+989224850196">📞 <span class="ltr">0922 485 0196</span></a>
-    <span class="c-item">📍 شیراز، ایران</span>
+    <a class="c-item" href="mailto:mr.kind1382@gmail.com"><span class="lbl">ایمیل</span><span class="ltr">mr.kind1382@gmail.com</span></a>
+    <a class="c-item" href="tel:+989224850196"><span class="lbl">تلفن</span><span class="ltr">0922 485 0196</span></a>
+    <span class="c-item"><span class="lbl">موقعیت</span>استان فارس، شیراز — معالی‌آباد</span>
   </div>
-  <p class="copy">ساخته‌شده با <span>♥</span> — علیرضا مهربان · ۱۴۰۵</p>
+  <p class="copy">© ۱۴۰۵ — علیرضا مهربان | کلیه حقوق محفوظ است</p>
 </footer>
 
 <script>
@@ -476,7 +492,7 @@ footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
     cols = Math.ceil(W/cell); rows = Math.ceil(H/cell);
     cells = [];
     for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){
-      if(Math.random()<.085) cells.push({x,y,t:Math.random()*Math.PI*2,hue:Math.random()<.75?0:1});
+      if(Math.random()<.07) cells.push({x,y,t:Math.random()*Math.PI*2});
     }
   }
   resize(); addEventListener('resize',resize);
@@ -486,7 +502,7 @@ footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
 
   function frame(t){
     ctx.clearRect(0,0,W,H);
-    ctx.strokeStyle='rgba(45,212,191,.05)';
+    ctx.strokeStyle='rgba(45,212,191,.045)';
     ctx.lineWidth=1;
     ctx.beginPath();
     for(let x=0;x<=cols;x++){ctx.moveTo(x*cell,0);ctx.lineTo(x*cell,H)}
@@ -496,11 +512,11 @@ footer .sub{color:var(--ink-dim);margin-bottom:34px;font-size:.98rem}
       const px=c.x*cell, py=c.y*cell;
       const d=Math.hypot(px+cell/2-mouse.x, py+cell/2-mouse.y);
       const near=Math.max(0,1-d/260);
-      const a=(Math.sin(t/1400+c.t)*.5+.5)*.12 + near*.35;
-      ctx.fillStyle = c.hue? `rgba(251,113,133,${a})` : `rgba(45,212,191,${a})`;
+      const a=(Math.sin(t/1500+c.t)*.5+.5)*.1 + near*.3;
+      ctx.fillStyle=`rgba(45,212,191,${a})`;
       ctx.fillRect(px+1,py+1,cell-2,cell-2);
       if(near>.4){
-        ctx.strokeStyle=`rgba(45,212,191,${near*.6})`;
+        ctx.strokeStyle=`rgba(45,212,191,${near*.5})`;
         ctx.strokeRect(px+.5,py+.5,cell-1,cell-1);
       }
     }
